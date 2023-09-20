@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body> 
+<h1 id="title">Lidl Customer Satisfaction Survey Form</h1>
+<p id="description"> Thank you for taking the time to help us improve our service </p>
+<form id="survey-form" method="" action="">
+
+  <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder= " Enter your name" required /></label>
+  <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder= " Enter your email" required /></label>
+  <label for="number" id="number-label">Age (optional) <input id="number" name="number" type="number" placeholder= " Age" min="10" max="99" /></label>
+  <label for="dropdown">Which option best describes your current role?
+          <select id="dropdown" name="dropdown">
+            <!-- the below first option's attributes: selected disabled hidden are commonly used in forms. They mean default option, disabled from choosing, and hidden by the browser respectively -->
+            <option value="" selected disabled hidden>(Select an option)</option>
+            <option value="1">Student</option>
+            <option value="2">Full-time Job</option>
+            <option value="3">Homemaker</option>
+            <option value="4">Prefer not ot say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+
+    <label>Would you recommend Lidl to a friend or family?</label>
+    <label for="definitely"><input id="definitely" type="radio" name="recommendation" value="1" class="inline" />Definitely</label>
+    <label for="maybe"><input id="maybe" type="radio" name="recommendation" value="2" class="inline" />Maybe</label>
+    <label for="no"><input id="no" type="radio" name="recommendation" value="3" class="inline" />No</label>
+
+<!-- -->
+    <label for="dropdown">What is your favorite feature of Lidl?
+          <select id="dropdown" name="dropdown" required >
+            <!-- the below first option's attributes: selected disabled hidden are commonly used in forms. They mean default option, disabled from choosing, and hidden by the browser respectively -->
+            <option value="" selected disabled hidden>(Select an option)</option>
+            <option value="1">Price</option>
+            <option value="2">Goods variety</option>
+            <option value="3">Goods Quality</option>
+            <option value="4">Interior Design</option>
+            <option value="5">Service Quality</option>
+            <option value="6">Location</option>
+            <option value="7">Promotion Activities</option>
+            <option value="8">Other</option>
+          </select>
+    </label>
+
+<!--TBC., almost there --> 
+<label>What would you like to see improved? (Check all that apply)</label>
+
+<label for="price">
+    <input id="price" type="checkbox" required name="improvement" class="inline" value="1" /> Price
+</label>
+<label for="Goods variety">
+<input id="Goods variety" type="checkbox" required name="improvement" class="inline" value="2" /> Goods variety
+</label>      
+<label for="Goods Quality">
+    <input id="Goods Quality" type="checkbox" required name="improvement" class="inline" value="3" /> Goods Quality
+</label>
+<label for="Interior Design">
+    <input id="Interior Design" type="checkbox" required name="improvement" class="inline" value="4" /> Interior Design
+</label>
+<label for="Service Quality">
+    <input id="Service Quality" type="checkbox" required name="improvement" class="inline" value="5" /> Service Quality
+</label> 
+<label for="Location">
+    <input id="Location" type="checkbox" required name="improvement" class="inline" value="6" /> Location
+</label> 
+<label for="Promotion Activities">
+    <input id="Promotion Activities" type="checkbox" required name="improvement" class="inline" value="7" /> Promotion Activities
+</label> 
+
+<label for="comments">Any comments or suggestions?
+    <textarea id="comments" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+</label>
+
+<input type="submit" id="submit" value="Submit" />
+
+</form>
+</body> 
